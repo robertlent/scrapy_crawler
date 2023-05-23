@@ -12,6 +12,10 @@ BOT_NAME = "pageprowler"
 SPIDER_MODULES = ["pageprowler.spiders"]
 NEWSPIDER_MODULE = "pageprowler.spiders"
 
+FEEDS = {
+    'booksdata.json': {'format': 'json'},
+    'booksdata.csv': {'format': 'csv'},
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = "pageprowler (+http://www.yourdomain.com)"
