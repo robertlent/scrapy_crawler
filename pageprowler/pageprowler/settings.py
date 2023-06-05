@@ -67,7 +67,8 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    "pageprowler.pipelines.PageprowlerPipeline": 300,
+    "pageprowler.pipelines.PageprowlerPipeline": 100,
+    "pageprowler.pipelines.SaveToMySQLPipeline": 200,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
